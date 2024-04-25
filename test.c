@@ -69,7 +69,7 @@ int main() {
     ed25519_key_exchange(shared_secret, other_public_key, private_key);
     ed25519_key_exchange(other_shared_secret, public_key, other_private_key);
 
-    for (i = 0; i < 32; ++i) {
+    for (i = 0; i < 50; ++i) {
         if (shared_secret[i] != other_shared_secret[i]) {
             printf("key exchange was incorrect\n");
             break;
